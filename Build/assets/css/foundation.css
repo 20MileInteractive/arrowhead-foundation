@@ -4270,18 +4270,3 @@ a.th {
     max-width: 500px; }
   .f-dropdown.large {
     max-width: 800px; }
-
-ol, ul {
-  list-style-position: inside;
-  list-style-type: none; }
-
-.footer {
-  margin-top: 2rem; }
-
-.footer-links {
-  padding: 1.5rem 0; }
-
-.furniture-care .row {
-  background: #eee;
-  padding: 1rem 0;
-  margin: 1rem auto; }

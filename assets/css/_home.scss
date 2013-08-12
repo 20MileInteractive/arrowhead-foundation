@@ -1,0 +1,19 @@
+.story-teaser {
+	.columns {
+		@include center-text;
+	}
+}
+
+.home-featured-products {
+	background: #eee;
+	padding: 2rem 0;
+
+	.large-12{
+		margin-bottom: 2rem;
+		border-bottom: 1px solid #bbb;
+		h5 {
+			@include center-text;	
+		}
+
+	}	
+}
