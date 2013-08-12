@@ -1,0 +1,22 @@
+// Base style sheet
+
+.our-brands {
+
+	.row.brand {
+		border-bottom: 1px solid #ddd;
+		margin-bottom: 2.5rem;
+		padding-bottom:1rem;
+	}
+	.small-12 {
+
+		a i {
+			font-size: 1.2rem;
+			padding-right:8px;
+			font-weight:normal;
+		}
+
+		a:first-child {
+			margin-right:2rem;
+		}
+	}
+}
