@@ -1,4 +1,4 @@
-arrowhead-foundation
-====================
+project-starter-template
+========================
 
-Arrowhead Foundation Prototype
+Template for web projects with Hammer and Foundation4
