@@ -81,7 +81,7 @@
 	    			<li><a href="nantucket-showroom.html">Nantucket Showroom</a></li>   			
 	    			<li class="has-dropdown"><a href="#">Customer Service</a>
 	    				 <ul class="dropdown">
-	    				 	<li class='current'><a class='current' href="how-to-order.html">How to Order</a></li>
+	    				 	<li><a href="how-to-order.html">How to Order</a></li>
 	    				 	<li><a href="shipping-and-returns.html">Shipping &amp; Returns</a></li>
 	    				 	<li><a href="faq.html">FAQs</a></li>
 	    				 	<li><a href="contact.html">Contact Us</a></li>
@@ -109,63 +109,148 @@
 	</div>
 </div>
 
-<div class="row">
-	<div class="large-12 columns">
-		<h2>How To Order</h2>
-	</div>
+<div id="checkout">
+<div id="steps" class="row">
+	<p class="small-4 columns"><a class='current' href="customer-info.html"><b>Step 1</b><br/>Customer Information</a></p>
+	<p class="small-4 columns"><a href="payment-info.html"><b>Step 2</b><br/>Payment Information</a></p>
+	<p class="small-4 columns"><a href="confirm.html"><b>Step 3</b><br/>Order Confirmation</a></p>
 </div>
-<div class="row">
-	<div class="large-9 push-3 columns">
-		<p>
-			Ordering products Donec id elit non mi porta gravida at eget metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		</p>
-		<section>
-			<h3>Order Online</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</section>
-		<section>
-			<h3>Order By Phone</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</section>
-		<section>
-			<h3>Order In Person</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</section>					
+	<div class="row">
+		<div class="large-6 columns">
+			<h5>Bill To:</h5>
+			<form  class="custom" id="contact-form">
+				<fieldset>
+				    <div class="row">
+				        <div class="large-12 columns">
+				        	<label>Name</label>
+				        	<input type="text" >
+				        </div>
+				    </div>		
+				    <div class="row">
+				        <div class="large-12 columns">
+				        	<label>Address</label>
+				        	<input type="text" >
+				      	</div>
+				      <div class="large-12 columns">
+				        	<input type="text" >
+				      </div>			      
+				    </div>
+				    <div class="row">
+				     	 <div class="large-12 columns">
+				        	<label>City</label>
+				        	<input type="text" >
+				      	</div>
+				    </div>	
+				    <div class="row">
+				      	<div class="large-12 columns">
+				        	<label>Zip Code</label>
+				        	<input type="text" >
+				      	</div>
+				    </div>	
+				    <div class="row">
+				      	<div class="large-12 columns">
+				        	<label for="customDropdown1">State</label>
+					      	<select id="customDropdown1" >
+					        	<option>Massachusetts</option>
+					        	<option>Alabama</option>
+					        	<option>Alaska</option>
+					        	<option>Arkansas</option>
+					      	</select>
+				      </div>
+				    </div>
+		
+				    <div class="row">
+				      <div class="large-12 columns">
+				        <label>Phone</label>
+				        <input type="text" >
+				      </div>
+				    </div>
+				    <div class="row">
+				      <div class="large-12 columns">
+				        <label>Email</label>
+				        <input type="text" >
+				      </div>
+				    </div>
+			  	</fieldset>
+			</form> 					
+		</div>
+		<div class="large-6 columns">
+			<h5>Ship To:</h5>
+			<form  class="custom" id="contact-form">
+				<fieldset>
+				    <div class="row">
+				        <div class="large-12 columns panel">
+				        	<label for="radio1">
+	    						<input name="radio1" checked type="checkbox" id="radio1" style="display:none;">
+	    						<span class="custom checkbox"></span> Same As The Billing Address
+	  						</label>
+				        </div>
+				       
+				    </div>
+				    <div>					
+					    <div class="row">
+					        <div class="large-12 columns">
+					        	<label>Name</label>
+					        	<input type="text" >
+					        </div>
+					    </div>		
+					    <div class="row">
+					        <div class="large-12 columns">
+					        	<label>Address</label>
+					        	<input type="text" >
+					      	</div>
+					      <div class="large-12 columns">
+					        	<input type="text" >
+					      </div>			      
+					    </div>
+					    <div class="row">
+					     	 <div class="large-12 columns">
+					        	<label>City</label>
+					        	<input type="text" >
+					      	</div>
+					    </div>	
+					    <div class="row">
+					      	<div class="large-12 columns">
+					        	<label>Zip Code</label>
+					        	<input type="text" >
+					      	</div>
+					    </div>	
+					    <div class="row">
+					      	<div class="large-12 columns">
+					        	<label for="customDropdown1">State</label>
+						      	<select id="customDropdown1" >
+						        	<option>Massachusetts</option>
+						        	<option>Alabama</option>
+						        	<option>Alaska</option>
+						        	<option>Arkansas</option>
+						      	</select>
+					      </div>
+					    </div>
+					    <div class="row">
+					      <div class="large-12 columns">
+					        <label>Phone</label>
+					        <input type="text" >
+					      </div>
+					    </div>
+					    <div class="row">
+					      <div class="large-12 columns">
+					        <label>Email</label>
+					        <input type="text" >
+					      </div>
+					    </div>
+					</div>
+			  	</fieldset>
+			</form>					
+		</div>
 	</div>
-	<div class="large-3 pull-9 columns">
-		<section class="panel">
-			<h5>Have questions?</h5>
-			<p>
-				Contact customer support at 555-555-5555 or <a href="#">email us.</a>
-			</p>
-			<hr/>
-			<p>
-				<small>Secondary Information can go here that supports the content of this page</small>
-			</p>
-			<hr/>
-		</section>
-	</div>	
+	<div class="row">
+		<div class="large-4 push-8 columns">
+			<section class="panel">
+				<a href="payment-info.html" class="button expand">Next: Review Order</a>
+			</section>	
+		</div>
+	</div>
+
 </div>
 <div class="footer row">
 	<div class="large-3 columns">

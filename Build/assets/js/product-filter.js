@@ -7,7 +7,7 @@ $(document).ready(function() {
 		var t = setTimeout(function() {
 			console.log("loaded");
 			elem.removeClass("loading").toggleClass("selected");
-		},400);
+		},350);
 	});
 
 });

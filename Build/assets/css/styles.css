@@ -4513,3 +4513,26 @@ ol, ul {
       background: #eeeeee url(../img/loading.gif) 0.5rem center no-repeat; }
       .product-filter section ul li a.loading:before {
         visibility: hidden; }
+
+.product-entry {
+  border-bottom: 1px solid #ddd;
+  padding: 2.5rem 0; }
+
+#product-image-strip {
+  margin-top: 1rem; }
+
+.product.row {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1em; }
+  .product.row .small-4 {
+    border-left: 1px solid #eee; }
+
+section.actions p {
+  margin-bottom: 0; }
+
+.line-item {
+  border-bottom: 1px solid #ddd; }
+  .line-item p {
+    margin: .2rem auto;
+    padding-bottom: .2rem; }

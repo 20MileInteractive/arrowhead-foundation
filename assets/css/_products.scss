@@ -28,3 +28,29 @@
 		}
 	}
 }
+
+.product-entry {
+	border-bottom: 1px solid #ddd;
+	padding: 2.5rem 0;
+}
+
+
+#product-image-strip {
+	margin-top:1rem;
+}
+
+.product.row {
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 1em;
+
+	.small-4 {
+		border-left: 1px solid #eee;
+	}
+}
+
+section.actions {
+	p {
+		margin-bottom:0;
+	}
+}

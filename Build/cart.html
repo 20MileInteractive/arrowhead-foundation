@@ -49,7 +49,7 @@
 				Customer&nbsp;Service <b>555-555-5555</b>
 			</p>
 			<p class="large-4 columns">
-				<a class="button expand" href="cart.html">Cart</a>
+				<a class="current button expand" href="cart.html">Cart</a>
 			</p>
 		</div>
 	</div>
@@ -81,7 +81,7 @@
 	    			<li><a href="nantucket-showroom.html">Nantucket Showroom</a></li>   			
 	    			<li class="has-dropdown"><a href="#">Customer Service</a>
 	    				 <ul class="dropdown">
-	    				 	<li class='current'><a class='current' href="how-to-order.html">How to Order</a></li>
+	    				 	<li><a href="how-to-order.html">How to Order</a></li>
 	    				 	<li><a href="shipping-and-returns.html">Shipping &amp; Returns</a></li>
 	    				 	<li><a href="faq.html">FAQs</a></li>
 	    				 	<li><a href="contact.html">Contact Us</a></li>
@@ -109,63 +109,128 @@
 	</div>
 </div>
 
-<div class="row">
-	<div class="large-12 columns">
-		<h2>How To Order</h2>
+<div id="checkout">
+	<div class="row title">
+			<div class="large-12 columns">
+				<h3>Your Cart</h3>
+			</div>
+		</div>
+	<div class="product row">	
+	<div class="small-12 large-6 columns">
+		<div class="row">
+			<div class="small-6 columns">
+				<p>
+					<img src="http://placehold.it/600x600" />
+				</p>
+			</div>
+			<div class="small-6 columns">
+				<h5>Product Name</h5>					
+				<p>
+					Brand<br/>
+					Sku: {###}<br/>
+					Options:
+					{list options}
+				</p>	
+			</div>
+		</div>
 	</div>
+	<div class="small-12 large-6 columns">
+		<div class="row">
+			<div class="small-4 columns">
+				<h6>Price</h6>
+				<p>
+					$500
+				</p>
+			</div>
+			<div class="small-4 columns">
+				<h6>Quantity:</h6>					
+				<form class="custom">
+					<select id="customDropdown">
+					    <option>1</option>
+					    <option>2</option>
+					    <option>3</option>
+					  </select>
+				</form>
+				<small>
+					<a href="#">Remove</a>
+				</small>
+			</div>
+
+			<div class="small-4 columns">
+				<h6>Total</h6>
+				<p>
+					$500
+				</p>				
+			</div>
+		</div>			
+	</div>		
 </div>
-<div class="row">
-	<div class="large-9 push-3 columns">
-		<p>
-			Ordering products Donec id elit non mi porta gravida at eget metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		</p>
-		<section>
-			<h3>Order Online</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</section>
-		<section>
-			<h3>Order By Phone</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</section>
-		<section>
-			<h3>Order In Person</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</section>					
+
+
+
+	<div class="product row">	
+	<div class="small-12 large-6 columns">
+		<div class="row">
+			<div class="small-6 columns">
+				<p>
+					<img src="http://placehold.it/600x600" />
+				</p>
+			</div>
+			<div class="small-6 columns">
+				<h5>Product Name</h5>					
+				<p>
+					Brand<br/>
+					Sku: {###}<br/>
+					Options:
+					{list options}
+				</p>	
+			</div>
+		</div>
 	</div>
-	<div class="large-3 pull-9 columns">
-		<section class="panel">
-			<h5>Have questions?</h5>
-			<p>
-				Contact customer support at 555-555-5555 or <a href="#">email us.</a>
-			</p>
-			<hr/>
-			<p>
-				<small>Secondary Information can go here that supports the content of this page</small>
-			</p>
-			<hr/>
-		</section>
-	</div>	
+	<div class="small-12 large-6 columns">
+		<div class="row">
+			<div class="small-4 columns">
+				<h6>Price</h6>
+				<p>
+					$500
+				</p>
+			</div>
+			<div class="small-4 columns">
+				<h6>Quantity:</h6>					
+				<form class="custom">
+					<select id="customDropdown">
+					    <option>1</option>
+					    <option>2</option>
+					    <option>3</option>
+					  </select>
+				</form>
+				<small>
+					<a href="#">Remove</a>
+				</small>
+			</div>
+
+			<div class="small-4 columns">
+				<h6>Total</h6>
+				<p>
+					$500
+				</p>				
+			</div>
+		</div>			
+	</div>		
+</div>
+
+
+
+	<div class="row">
+		<div class="large-4 large-offset-8 small-12 columns">
+			<div class="panel">
+				<h5>Sub-Total: <b>$156</b></h5>
+				<a href="customer-info.html" class="button expand">Checkout</a>
+				<a href="product-listing.html" class="button expand small secondary">Keep Shopping</a>
+
+			</div>					
+		</div>
+	</div>
 </div>
 <div class="footer row">
 	<div class="large-3 columns">

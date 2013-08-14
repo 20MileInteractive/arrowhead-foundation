@@ -1,52 +1,202 @@
 <!-- @include _top.html -->
 <!-- @include masthead -->
 <div class="row">
-	<div class="large-3 columns product-filter">
-		<h5>Filter Products</h5>		
-		<section>
-			<p>
-				<b>By Brand</b>
-				<ul>
-					<li><a class="filter-option" href="#"> Brand 1</a></li>
-					<li><a class="filter-option" href="#"> Brand 2</a></li>
-					<li><a class="filter-option" href="#"> Brand 3</a></li>
-					<li><a class="filter-option" href="#"> Brand 4</a></li>
-					<li><a class="filter-option" href="#"> Brand 5</a></li>
-					<li><a class="filter-option" href="#"> Brand 6</a></li>
-				</ul>
-			</p>
-		</section>
-		<section>
-			<p>
-				<b>By Category</b>
-				<ul>
-					<li><a class="filter-option" href="#"> Category 1</a></li>
-					<li><a class="filter-option" href="#"> Category 2</a></li>
-					<li><a class="filter-option" href="#"> Category 3</a></li>
-					<li><a class="filter-option" href="#"> Category 4</a></li>
-					<li><a class="filter-option" href="#"> Category 5</a></li>
-					<li><a class="filter-option" href="#"> Category 6</a></li>
-				</ul>
-			</p>
-		</section>		
-	</div>	
-	<div class="large-9 columns">
-		<section class="product-entry row">
-			<section class="large-5 columns">
-				<a href="<!-- @path product-detail -->"><!-- @placeholder 800x600 product+image --></a>
-			</section>
-			<section class="large-7 columns">
-				<h5><a href="<!-- @path product-detail -->">Caluco Origin Aluminum Cushioned Conversation Lounge Set for 4</a></h5>
-				<p>
-					<a href="<!-- @path our-brands -->">Brand Name</a>
-				</p>
-				<p>
-					$355
-				</p>
-			</section>
-		</section>
-	</div>
-
+	<p class="large-12 columns">
+		<a href="#">&laquo; Back</a>
+	</p>
 </div>
+<article id="product-detail" class="row">
+	<div class="large-6 columns">
+		<div class="row">
+			<div id="product-image" class="large-12 columns">
+				<img src="http://placehold.it/800x800&text=image" alt=""/>
+			</div>
+		</div>
+		<div id="product-image-strip" class="row">
+			<div class="small-12 large-12 columns">
+				<ul class="small-block-grid-4 large-block-grid-4">
+					<li><a href="#"><img src="http://placehold.it/800x800&text=image"></a></li>
+					<li><a href="#"><img src="http://placehold.it/800x800&text=image"></a></li>
+			    </ul>
+			</div>
+		</div>
+	</div>
+	<div class="large-6 columns">
+		<header>
+			<h1>Product Title</h1>
+			<span class="sku_number">SKU: {####}</span>  <a class="" href="#">Kingsley Bate</a>
+		</header>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p>
+			<h5 class="price">$475.00</h5>
+			<span class="shipping">Includes Free Shipping </span>		</p>
+
+		<div class="row product-option">
+			<div class="large-4 columns">
+				<label for="option1">Option 1 Label</label>
+			</div>
+			<div class="large-8 columns">
+				<select name="option1" id="">
+					<option value="opt1">Option 1</option>
+					<option value="opt2">Option 2</option>
+					<option value="opt3">Option 3</option>
+					<option value="opt4">Option 4</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="row product-option">
+			<div class="large-4 columns">
+				<label for="option2">Option 2 Label</label>
+			</div>
+			<div class="large-8 columns">
+				<select name="option2" id="">
+					<option value="opt1">Option 1</option>
+					<option value="opt2">Option 2</option>
+					<option value="opt3">Option 3</option>
+					<option value="opt4">Option 4</option>
+				</select>
+			</div>
+		</div>
+
+				<div class="row white-glove">
+			<div class="large-12 columns">
+				<input type="checkbox">
+				Add White Glove Delivery ($256)
+				<a href="#">?</a>
+			</div>
+		</div>
+		
+		<div id="add-to-cart" class="row">
+			<div class="large-2 columns">
+				Quantity
+			</div>
+			<div class="large-2 columns">
+				<select name="" id="">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="large-8 columns">
+				<a class="button" href="<!-- @path cart -->">Add To Cart</a>
+			</div>
+		</div>
+
+	</div>
+</article>
+
+<div class="row">
+	<div class="large-12 columns">
+		<div id="product-detail-panels" class="section-container tabs" data-section="tabs">
+			<section class="section">
+				<p class="title"><a href="#p-opt-items">Optional Items</a></p>
+				<div class="content">
+					<div class="row">
+						<div class="large-2 columns">
+							<img src="http://placehold.it/640x400" alt="">
+						</div>
+						<div class="large-4 columns">
+							<h5>Lorem ipsum nostrud aliqua laboris dolor commodo.</h5>
+							<small>SKU: 1234567890</small>
+							<p>
+								Lorem ipsum aliqua cupidatat ut laborum eu sit culpa enim irure dolore consectetur laborum ut.
+							</p>
+						</div>
+						<div class="large-4 columns">
+							<p>
+								<span class="price">$145.00</span>
+							</p>
+							<p>
+								<button>View Product</button>
+							</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="large-2 columns">
+							<img src="http://placehold.it/640x400" alt="">
+						</div>
+						<div class="large-4 columns">
+							<h5>Lorem ipsum nostrud aliqua laboris dolor commodo.</h5>
+							<small>SKU: 1234567890</small>
+							<p>
+								Lorem ipsum aliqua cupidatat ut laborum eu sit culpa enim irure dolore consectetur laborum ut.
+							</p>
+						</div>
+						<div class="large-4 columns">
+							<p>
+								<span class="price">$145.00</span>
+							</p>
+							<p>
+								<button>View Product</button>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section">
+				<p class="title"><a href="#p-p-detail">Product Details</a></p>
+				<div class="content">
+										<h6>Product Dimensions</h6>
+					<p>
+						Width: 24
+						Height: 15.5
+						Depth: 23
+					</p>
+										<h6>Product Warranty</h6>
+					<p>
+	Thank you for choosing Kingsley-Bate fine outdoor furniture. With proper use and care, we are confident that our product will provide you with years of trouble-free enjoyment. Your furniture comes with a limited warranty against manufacturer&#39;s defects. Standard warranty periods for each category of furniture are provided below.</p>
+<p>
+	To inquire about warranty coverage, please contact the retail store where the furniture was purchased.</p>
+<p>
+	TEAK FURNITURE</p>
+<ul>
+	<li>
+		5 year warranty for residential applications</li>
+	<li>
+		3 year warranty for commercial applications</li>
+	<li>
+		1 year warranty for glass table tops, cushions, slings, and pillows</li>
+</ul>
+<p>
+	STAINLESS STEEL FURNITURE</p>
+<ul>
+	<li>
+		3 year warranty for residential or commercial applications</li>
+	<li>
+		1 year warranty for slings</li>
+</ul>
+<p>
+	WOVEN FURNITURE</p>
+<ul>
+	<li>
+		3 year warranty for residential or commercial applications</li>
+	<li>
+		1 year warranty for glass table tops, cushions, and pillows</li>
+</ul>
+<p>
+	UMBRELLAS/BASES</p>
+<ul>
+	<li>
+		1 year umbrella warranty for residential or commercial applications</li>
+	<li>
+		1 year umbrella base warranty for residential or commercial applications (corrosion not covered)</li>
+</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+</div>
+
 <!-- @include footer -->
 <!-- @include _bottom.html -->

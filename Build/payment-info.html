@@ -81,7 +81,7 @@
 	    			<li><a href="nantucket-showroom.html">Nantucket Showroom</a></li>   			
 	    			<li class="has-dropdown"><a href="#">Customer Service</a>
 	    				 <ul class="dropdown">
-	    				 	<li class='current'><a class='current' href="how-to-order.html">How to Order</a></li>
+	    				 	<li><a href="how-to-order.html">How to Order</a></li>
 	    				 	<li><a href="shipping-and-returns.html">Shipping &amp; Returns</a></li>
 	    				 	<li><a href="faq.html">FAQs</a></li>
 	    				 	<li><a href="contact.html">Contact Us</a></li>
@@ -109,63 +109,175 @@
 	</div>
 </div>
 
-<div class="row">
-	<div class="large-12 columns">
-		<h2>How To Order</h2>
-	</div>
+<div id="checkout">
+	<div id="steps" class="row">
+	<p class="small-4 columns"><a href="customer-info.html"><b>Step 1</b><br/>Customer Information</a></p>
+	<p class="small-4 columns"><a class='current' href="payment-info.html"><b>Step 2</b><br/>Payment Information</a></p>
+	<p class="small-4 columns"><a href="confirm.html"><b>Step 3</b><br/>Order Confirmation</a></p>
 </div>
-<div class="row">
-	<div class="large-9 push-3 columns">
-		<p>
-			Ordering products Donec id elit non mi porta gravida at eget metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		</p>
-		<section>
-			<h3>Order Online</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</section>
-		<section>
-			<h3>Order By Phone</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</section>
-		<section>
-			<h3>Order In Person</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-		</section>					
+	<div class="row">
+		<h3 class="large-12 columns">Order Summary</h3>		
 	</div>
-	<div class="large-3 pull-9 columns">
-		<section class="panel">
-			<h5>Have questions?</h5>
+	<div class="product row">
+		<div class="small-12 large-6 columns">
+			<div class="row">
+				<div class="small-6 columns">
+					<p>
+						<img src="http://placehold.it/600x600" />
+					</p>
+				</div>
+				<div class="small-6 columns">
+					<h5>Product Name</h5>					
+					<p>
+						Brand<br/>
+						Sku: {###}<br/>
+						Options:
+						{list options}
+					</p>	
+				</div>
+			</div>
+		</div>
+		<div class="small-12 large-6 columns">
+			<div class="row">
+				<div class="small-4 columns">
+					<h6>Price</h6>
+					<p>
+						$500
+					</p>
+				</div>
+				<div class="small-4 columns">
+					<h6>Quantity:</h6>					
+					<p>
+						1
+					</p>
+				</div>
+				<div class="small-4 columns">
+					<h6>Total</h6>
+					<p>
+						$500
+					</p>				
+				</div>
+			</div>			
+		</div>		
+	</div>
+	<div id="review-order" class="row">
+		<div class="large-4 columns">
+			<h5>Bill To:</h5>
 			<p>
-				Contact customer support at 555-555-5555 or <a href="#">email us.</a>
+				{name}<br/>
+				{address}<br/>			
+				{city}<br/>
+				{state}<br/>
+				{zip}<br/>								
 			</p>
-			<hr/>
+		</div>
+		<div class="large-4 columns">
+			<h5>Ship To:</h5>
 			<p>
-				<small>Secondary Information can go here that supports the content of this page</small>
+				{name}<br/>
+				{address}<br/>			
+				{city}<br/>
+				{state}<br/>
+				{zip}<br/>								
 			</p>
-			<hr/>
-		</section>
-	</div>	
+		</div>
+		<div class="large-4 columns">
+			<div class="panel">
+			<section class="row line-item">
+				<p class="small-8 columns">
+					Subtotal			
+				</p>
+				<p class="small-4 columns">
+					$XX.XX
+				</p>
+			</section>
+			<section class="row line-item">
+				<p class="small-8 columns">
+					Shipping			
+				</p>
+				<p class="small-4 columns">
+					$XX.XX
+				</p>
+			</section>
+			<section class="row line-item">
+				<p class="small-8 columns">
+					Taxes			
+				</p>
+				<p class="small-4 columns">
+					$XX.XX
+				</p>
+			</section>							
+			<section class="row line-item">
+				<p class="small-8 columns">
+					<b>Total</b>			
+				</p>
+				<p class="small-4 columns">
+					<b>$XX.XX</b>
+				</p>
+			</section>
+			<form class="custom">
+				<fieldset>
+				    <div class="row">
+				      	<div class="large-12 columns">
+				        	<label for="customDropdown1">Payment Method</label>
+					      	<select id="customDropdown1" >
+					        	<option>Visa</option>
+					        	<option>Mastercard</option>
+					      	</select>
+				        </div>
+				    </div>					
+				    <div class="row">
+				        <div class="large-12 columns">
+				        	<label>Card No.</label>
+				        	<input type="text" >
+				        </div>
+				    </div>		
+				    <div class="row">
+				        <div class="large-12 columns">
+				        	<label>Name on Card</label>
+				        	<input type="text" >
+				        </div>
+				    </div>
+				    <div class="row">
+				        <label class="large-12 columns" for="customDropdown1">Expires</label>
+				        <div class="small-5 columns">
+						    <select>
+						       	<option>01</option>
+						       	<option>02</option>
+						       	<option>03</option>
+						       	<option>04</option>
+						       	<option>05</option>
+						       	<option>06</option>
+						       	<option>07</option>
+						       	<option>08</option>
+						       	<option>09</option>
+						       	<option>10</option>
+						       	<option>11</option>
+						       	<option>12</option>
+						   	</select>
+						</div>
+						<div class="small-7 columns">
+						    <select>
+						    	<option>2013</option>
+						     	<option>2014</option>
+						    </select>
+						</div>
+				    </div>				    	
+				    <div class="row">
+				        <div class="large-12 columns">
+				        	<label>CSV</label>
+				        	<input type="text" >
+				        </div>
+				    </div>	
+			  	</fieldset>
+			</form>
+			<p>
+			<a href="confirm.html" class="button expand">Place Order</a>	
+			</p> 
+		</div>
+		</div>		
+	</div>
+
 </div>
 <div class="footer row">
 	<div class="large-3 columns">
