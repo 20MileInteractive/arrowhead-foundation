@@ -1071,7 +1071,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em;
   line-height: 1.2125em; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    font-size: 60%;
+    font-size: 80%;
     color: #6f6f6f;
     line-height: 0; }
 
@@ -1112,7 +1112,7 @@ b {
   line-height: inherit; }
 
 small {
-  font-size: 60%;
+  font-size: 80%;
   line-height: inherit; }
 
 code {
@@ -4464,8 +4464,52 @@ ol, ul {
 .our-brands .small-12 a:first-child {
   margin-right: 2rem; }
 
-.blog .row ul li section {
+.masonry-brick {
+  width: 100%;
+  float: left;
   background: #eee;
   padding: .5rem;
-  border-radius: 5px;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d9d9d9;
+  margin-bottom: 1.25em;
+  padding: 1.25em;
+  background: #f2f2f2; }
+  .masonry-brick > :first-child {
+    margin-top: 0; }
+  .masonry-brick > :last-child {
+    margin-bottom: 0; }
+  .masonry-brick h1, .masonry-brick h2, .masonry-brick h3, .masonry-brick h4, .masonry-brick h5, .masonry-brick h6, .masonry-brick p {
+    color: #333333; }
+  .masonry-brick h1, .masonry-brick h2, .masonry-brick h3, .masonry-brick h4, .masonry-brick h5, .masonry-brick h6 {
+    line-height: 1;
+    margin-bottom: 0.625em; }
+    .masonry-brick h1.subheader, .masonry-brick h2.subheader, .masonry-brick h3.subheader, .masonry-brick h4.subheader, .masonry-brick h5.subheader, .masonry-brick h6.subheader {
+      line-height: 1.4; }
+
+#masonryContainer {
+  width: 0 auto; }
+
+@media only screen and (min-width: 30rem) {
+  .masonry-brick {
+    width: 48%;
+    margin-right: 1%; } }
+.product-filter section {
+  border-top: 1px solid #ddd;
+  padding-top: .5rem; }
+  .product-filter section ul li a {
+    display: block;
+    background: #eee;
+    padding: .5rem;
+    margin: .2rem; }
+    .product-filter section ul li a:before {
+      content: "\2610"; }
+    .product-filter section ul li a.selected {
+      background: #ddd; }
+      .product-filter section ul li a.selected:before {
+        content: "\2611"; }
+    .product-filter section ul li a.loading {
+      background: #eeeeee url(../img/loading.gif) 0.5rem center no-repeat; }
+      .product-filter section ul li a.loading:before {
+        visibility: hidden; }

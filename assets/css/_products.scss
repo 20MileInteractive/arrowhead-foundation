@@ -1,0 +1,30 @@
+.product-filter {
+	section {
+		border-top: 1px solid #ddd;
+		padding-top:.5rem;
+
+		ul li a{
+			display: block;
+			background: #eee;
+			padding: .5rem;
+			margin: .2rem;
+
+			&:before {
+				content: "\2610" ;
+			}
+			&.selected {
+				background:#ddd;
+
+				&:before {
+					content: "\2611" ;
+				}
+			}
+			&.loading {
+				background: #eee url(loading.gif)  .5rem center no-repeat;
+				&:before {
+					visibility: hidden;
+				}
+			}			
+		}
+	}
+}
