@@ -4282,13 +4282,10 @@ a.sidebar-button {
   display: block;
   text-align: center;
   color: #fff;
-  padding: .5rem 0; }
+  padding: .8rem 0; }
 
 .container {
   width: 100%; }
-
-.row {
-  overflow: hidden; }
 
 .row .row {
   overflow: visible; }
