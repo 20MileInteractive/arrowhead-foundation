@@ -1,6 +1,8 @@
 // Global Foundation settings and variables
 @import "settings";
 
+@import "offcanvas";
+
 // Site specific variables
 @import "variables";
 
@@ -17,6 +19,9 @@
 @import "global";
 
 // Homepage styles 
+@import "home";
+
+// Furniture page
 @import "furniture-care";
 
 // Icon Font

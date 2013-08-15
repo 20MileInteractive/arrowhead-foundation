@@ -7,3 +7,19 @@
 
 	}
 }
+
+#steps {
+	text-align: center;
+	a {
+		color:#ddd;
+
+	}
+
+	a.current {
+		color: #555;
+	}
+}
+
+#checkout .panel {
+	@include center-text;
+}

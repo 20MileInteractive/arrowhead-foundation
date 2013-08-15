@@ -29,6 +29,12 @@
 	}
 }
 
+a.clear-selection {
+	color: #fff;
+	display: block;
+	text-align: center;
+}
+
 .product-entry {
 	border-bottom: 1px solid #ddd;
 	padding: 2.5rem 0;
@@ -53,4 +59,9 @@ section.actions {
 	p {
 		margin-bottom:0;
 	}
+}
+
+
+#sidebar {
+	background:#999;
 }

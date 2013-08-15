@@ -39,22 +39,26 @@
 </head>
 <body>
 
+<div class="mobile-menu row collapse show-for-small">
+	<p class="small-6 columns">
+		<a href="#footer-menu" class="smoothScroll button small expand"><i class="foundicon-settings"></i> Menu</a>
+	</p>
+	<p class="small-6 columns">
+		<a href="cart.html" class="button small expand"><i class="foundicon-cart"></i> Cart</a>
+	</p>
+</div>
 <div id="masthead" class="row">
 	<div class="large-4 columns">
 		<a href="index.html"><img src="http://placehold.it/400x100&text=logo"/></a>
 	</div>
-	<div class="large-6 offset-2 columns">
-		<div class="row">
-			<p class="large-8 columns">
+	<div class="large-8 columns hide-for-small">
+			<p>				
+				<a class="button" href="cart.html">Cart</a><br/>
 				Customer&nbsp;Service <b>555-555-5555</b>
 			</p>
-			<p class="large-4 columns">
-				<a class="button expand" href="cart.html">Cart</a>
-			</p>
-		</div>
 	</div>
 </div>
-<div class="row">
+<div class="row hide-for-small">
 	<div class="large-12 columns">
 		<nav class="top-bar">
 	  		<ul class="title-area">
@@ -167,32 +171,32 @@
 		</section>
 	</div>	
 </div>
-<div class="footer row">
+<div id="footer-menu" class="footer row">
 	<div class="large-3 columns">
 		<h5>Shop</h5>
 		<ul>
-			<li><a href="#">By Brand</a></li>
-			<li><a href="#">By Category</a></li>
-			<li><a href="#">By Materials</a></li>
-			<li><a href="#">Sale Items</a></li>
+			<li><a href="product-listing.html">By Brand</a></li>
+			<li><a href="product-listing.html">By Category</a></li>
+			<li><a href="product-listing.html">By Materials</a></li>
+			<li><a href="product-listing.html">Sale Items</a></li>
 		</ul>
 	</div>
 	<div class="large-3 columns">
 		<h5>Learn</h5>
 		<ul>
-			<li><a href="#">Furniture Care</a></li>
-			<li><a href="#">Our Story</a></li>
-			<li><a href="#">Our Brands</a></li>
-			<li><a href="#">Our Blog</a></li>
+	    	<li><a href="furniture-care.html">Furniture Care</a></li>
+	    	<li><a href="our-story.html">Our Story</a></li>
+	    	<li><a href="our-brands.html">Our Brands</a></li>
+	    	<li><a href="blog-listing.html">Our Blog</a></li>
 		</ul>
 	</div>
 	<div class="large-3 columns">
 		<h5>Customer Service</h5>
 		<ul>
-			<li><a href="#">How To Order</a></li>
-			<li><a href="#">Shipping &amp; Returns</a></li>
-			<li><a href="#">FAQs</a></li>
-			<li><a href="#">Order Tracking</a></li>
+	    	<li class='current'><a class='current' href="how-to-order.html">How to Order</a></li>
+	    	<li><a href="shipping-and-returns.html">Shipping &amp; Returns</a></li>
+	    	<li><a href="faq.html">FAQs</a></li>
+	    	<li><a href="contact.html">Contact Us</a></li>
 		</ul>
 	</div>	
 	<div class="large-3 columns">
@@ -233,7 +237,9 @@
     <script src='assets/js/foundation/index.js'></script>
     <script src='assets/js/masonry.pkgd.min.js'></script>
     <script src='assets/js/masonry.js'></script> 
-    <script src='assets/js/product-filter.js'></script>         
+    <script src='assets/js/product-filter.js'></script>
+    <script src='assets/js/smoothScroll.js'></script>
+    <script src='assets/js/foundation/jquery.offcanvas.js'></script>                   
 	<script src='assets/js/script.js'></script>
 </body>
 </html>

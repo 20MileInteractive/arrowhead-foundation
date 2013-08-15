@@ -7,3 +7,21 @@
 .footer-links {
 	padding: 1.5rem 0;
 }
+
+#masthead {
+	margin-top:1rem;
+	.large-8 {
+		text-align:right;
+	}
+
+	.large-4 img {
+		margin:0 auto 2rem;
+		display:block;
+	}
+}
+
+.mobile-menu {
+	p {
+		margin-bottom: 0;
+	}
+}
